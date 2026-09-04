@@ -3,75 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Digital Solutions</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="logo">DIGITAL SOLUTIONS</div>
+    <div class="logo">MY WEBSITE</div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="consulting.html">Consulting</a>
-        <a href="development.html">Development</a>
-        <a href="web-design.html">Web Design</a>
-        <a href="our-story.html">Our Story</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="team.html">Team</a>
         <a href="blog.html">Blog</a>
-        <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<section class="page-title">
+<main class="page">
+
     <h1>Contact Us</h1>
-    <p>Let's discuss your next project.</p>
-</section>
 
-<section class="section">
+    <form onsubmit="submitForm(event)">
 
-    <div class="contact">
+        <label>Name</label>
+        <input type="text" id="name" required>
 
-        <div>
-            <h2>Get In Touch</h2>
+        <label>Email</label>
+        <input type="email" id="email" required>
 
-            <p>
-                Have a project in mind? Contact our team today.
-            </p>
+        <label>Message</label>
+        <textarea id="message" rows="6" required></textarea>
 
-            <br>
+        <button type="submit">Send Message</button>
 
-            <p><strong>Email:</strong> info@digitalsolutions.com</p>
-            <p><strong>Phone:</strong> +65 1234 5678</p>
-            <p><strong>Location:</strong> Singapore</p>
-        </div>
+    </form>
 
-        <form>
-
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name">
-
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
-
-            <label>Subject</label>
-            <input type="text" placeholder="Enter subject">
-
-            <label>Message</label>
-            <textarea placeholder="Enter your message"></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: info@example.com</p>
+        <p>Phone: +65 1234 5678</p>
+        <p>Address: Singapore</p>
     </div>
 
-</section>
+</main>
 
 <footer>
-    <p>© 2026 Digital Solutions. All Rights Reserved.</p>
+    <p>&copy; 2026 My Website. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
