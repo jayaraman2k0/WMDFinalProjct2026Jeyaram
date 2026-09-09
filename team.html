@@ -1,56 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Team | TechNova</title>
+
+    <link rel="stylesheet" href="shared.css">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="home.html" class="logo">
+            Tech<span>Nova</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<main class="page">
 
-    <h1>Our Team</h1>
+<section class="page-hero">
 
-    <div class="cards">
+    <div class="container">
 
-        <div class="card">
-            <div class="profile">PHOTO</div>
-            <h2>Team Member 1</h2>
-            <p>Web Designer</p>
+        <span class="tag">OUR TEAM</span>
+
+        <h1>Meet the people behind TechNova.</h1>
+
+        <p>
+            Designers, developers and strategists working together.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2>Leadership</h2>
         </div>
 
-        <div class="card">
-            <div class="profile">PHOTO</div>
-            <h2>Team Member 2</h2>
-            <p>Developer</p>
-        </div>
 
-        <div class="card">
-            <div class="profile">PHOTO</div>
-            <h2>Team Member 3</h2>
-            <p>Consultant</p>
+        <div class="grid-3">
+
+
+            <div class="card team">
+
+                <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80"
+                    alt="Jordan Lee"
+                >
+
+                <h3>Jordan Lee</h3>
+
+                <small>Founder & CEO</small>
+
+                <p>
+                    Leads company strategy and client partnerships.
+                </p>
+
+            </div>
+
+
+            <div class="card team">
+
+                <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80"
+                    alt="Maya Chen"
+                >
+
+                <h3>Maya Chen</h3>
+
+                <small>Creative Director</small>
+
+                <p>
+                    Leads design, branding and user experience.
+                </p>
+
+            </div>
+
+
+            <div class="card team">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+                    alt="Ryan Tan"
+                >
+
+                <h3>Ryan Tan</h3>
+
+                <small>Technical Director</small>
+
+                <p>
+                    Leads engineering and software development.
+                </p>
+
+            </div>
+
         </div>
 
     </div>
 
-</main>
+</section>
+
+
+<section class="section alt">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2>Our departments</h2>
+
+        </div>
+
+
+        <div class="grid-3">
+
+            <div class="card">
+                <div class="icon">✦</div>
+                <h3>Design Team</h3>
+                <p>
+                    UI/UX designers and creative specialists.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⌘</div>
+                <h3>Development Team</h3>
+                <p>
+                    Frontend and backend developers.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">◎</div>
+                <h3>Strategy Team</h3>
+                <p>
+                    Business and technology consultants.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

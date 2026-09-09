@@ -3,62 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TechNova | Sitemap</title>
+    <link rel="stylesheet" href="shared.css">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
+<header class="navbar">
+    <div class="container nav-inner">
+        <a href="home.html" class="logo">Tech<span>Nova</span></a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+        <a href="home.html" class="btn btn-primary">
+            Open Website →
+        </a>
+    </div>
 </header>
 
-<main>
+<section class="page-hero">
+    <div class="container">
+        <span class="tag">SITE ARCHITECTURE</span>
+        <h1>TechNova Sitemap</h1>
+        <p>
+            Explore the complete structure of our software services website.
+        </p>
+    </div>
+</section>
 
-    <section class="hero">
-        <h1>Welcome to Our Website</h1>
-        <p>Creative Web Design, Development and Consulting Services</p>
-        <button onclick="showMessage()">Get Started</button>
-    </section>
+<section class="section">
+    <div class="container">
 
-    <section class="content">
-        <h2>Our Services</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Modern and user-friendly website designs.</p>
-                <a href="web-design.html">Learn More</a>
-            </div>
-
-            <div class="card">
-                <h3>Development</h3>
-                <p>Professional website development solutions.</p>
-                <a href="development.html">Learn More</a>
-            </div>
-
-            <div class="card">
-                <h3>Consulting</h3>
-                <p>Expert advice for your digital projects.</p>
-                <a href="consulting.html">Learn More</a>
-            </div>
+        <div class="section-head">
+            <h2>Website Pages</h2>
+            <p>Click any page to visit it.</p>
         </div>
-    </section>
 
-</main>
+        <div class="sitemap">
+
+            <div class="card">
+                <div class="icon">⌂</div>
+                <h3>Main Pages</h3>
+
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">◎</div>
+                <h3>About</h3>
+
+                <a href="team.html">Our Team</a>
+                <a href="story.html">Our Story</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙</div>
+                <h3>Services</h3>
+
+                <a href="web-design.html">Web Design</a>
+                <a href="development.html">Development</a>
+                <a href="consulting.html">Consulting</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">▣</div>
+                <h3>Portfolio</h3>
+
+                <a href="case-studies.html">Case Studies</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">?</div>
+                <h3>Support</h3>
+
+                <a href="faq.html">FAQ</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

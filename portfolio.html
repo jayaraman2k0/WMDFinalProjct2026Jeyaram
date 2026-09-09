@@ -1,58 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | TechNova</title>
+
+    <link rel="stylesheet" href="shared.css">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="home.html" class="logo">
+            Tech<span>Nova</span>
+        </a>
+
+        <button class="menu-btn">☰</button>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<main class="page">
 
-    <h1>Portfolio</h1>
+<section class="page-hero">
 
-    <div class="portfolio-grid">
+    <div class="container">
 
-        <div class="portfolio-item">
-            <div class="placeholder">PROJECT IMAGE</div>
-            <h2>Project One</h2>
-            <p>Website design project.</p>
+        <span class="tag">OUR PORTFOLIO</span>
+
+        <h1>Projects we're proud of.</h1>
+
+        <p>
+            Explore websites, applications and digital experiences
+            created by TechNova.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="filters">
+
+            <button
+                class="filter-btn portfolio-filter active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter-btn portfolio-filter"
+                data-filter="web">
+                Web
+            </button>
+
+            <button
+                class="filter-btn portfolio-filter"
+                data-filter="mobile">
+                Mobile
+            </button>
+
+            <button
+                class="filter-btn portfolio-filter"
+                data-filter="ecommerce">
+                E-commerce
+            </button>
+
         </div>
 
-        <div class="portfolio-item">
-            <div class="placeholder">PROJECT IMAGE</div>
-            <h2>Project Two</h2>
-            <p>E-commerce development project.</p>
+
+        <div class="grid-3">
+
+
+            <div class="card project"
+                 data-category="ecommerce">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+                    alt="NovaShop">
+
+                <span class="tag">E-COMMERCE</span>
+
+                <h3>NovaShop</h3>
+
+                <p>
+                    Modern online shopping experience.
+                </p>
+
+            </div>
+
+
+            <div class="card project"
+                 data-category="web">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                    alt="InsightPro">
+
+                <span class="tag">WEB APP</span>
+
+                <h3>InsightPro</h3>
+
+                <p>
+                    Business analytics dashboard.
+                </p>
+
+            </div>
+
+
+            <div class="card project"
+                 data-category="mobile">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
+                    alt="FitTrack">
+
+                <span class="tag">MOBILE</span>
+
+                <h3>FitTrack</h3>
+
+                <p>
+                    Mobile productivity application.
+                </p>
+
+            </div>
+
+
+            <div class="card project"
+                 data-category="web">
+
+                <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                    alt="StudioSite">
+
+                <span class="tag">WEB</span>
+
+                <h3>StudioSite</h3>
+
+                <p>
+                    Creative agency website.
+                </p>
+
+            </div>
+
+
+            <div class="card project"
+                 data-category="mobile">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
+                    alt="TaskFlow">
+
+                <span class="tag">MOBILE</span>
+
+                <h3>TaskFlow</h3>
+
+                <p>
+                    Productivity application.
+                </p>
+
+            </div>
+
+
+            <div class="card project"
+                 data-category="ecommerce">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                    alt="StyleCart">
+
+                <span class="tag">E-COMMERCE</span>
+
+                <h3>StyleCart</h3>
+
+                <p>
+                    Fashion shopping platform.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="portfolio-item">
-            <div class="placeholder">PROJECT IMAGE</div>
-            <h2>Project Three</h2>
-            <p>Business website project.</p>
+
+        <div class="center pagination">
+
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+
         </div>
 
     </div>
 
-    <a class="button" href="case-studies.html">View Case Studies</a>
+</section>
 
-</main>
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <h2>
+                    Want to see our process?
+                </h2>
+
+                <p>
+                    Explore our detailed case studies.
+                </p>
+
+            </div>
+
+            <a href="case-studies.html"
+               class="btn white-btn">
+                View Case Studies →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

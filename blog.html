@@ -1,52 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | TechNova</title>
+
+    <link rel="stylesheet" href="shared.css">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="home.html" class="logo">
+            Tech<span>Nova</span>
+        </a>
+
+        <button class="menu-btn">☰</button>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<main class="page">
 
-    <h1>Blog</h1>
+<section class="page-hero">
 
-    <article class="blog-post">
-        <div class="placeholder">BLOG IMAGE</div>
-        <h2>Importance of Good Web Design</h2>
-        <p>Learn why website design is important for businesses.</p>
-    </article>
+    <div class="container">
 
-    <article class="blog-post">
-        <div class="placeholder">BLOG IMAGE</div>
-        <h2>Web Development Trends</h2>
-        <p>Discover modern web development technologies.</p>
-    </article>
+        <span class="tag">TECHNOVA BLOG</span>
 
-    <article class="blog-post">
-        <div class="placeholder">BLOG IMAGE</div>
-        <h2>Building Better Websites</h2>
-        <p>Tips for creating user-friendly websites.</p>
-    </article>
+        <h1>Ideas for the digital world.</h1>
 
-</main>
+        <p>
+            Tips and insights about websites, software and business.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container blog-layout">
+
+
+        <main>
+
+            <div class="card featured">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+                    alt="Website planning"
+                >
+
+                <span class="tag">FEATURED</span>
+
+                <h2>
+                    How to plan a website before writing code
+                </h2>
+
+                <p>
+                    Good planning can reduce redesign,
+                    improve user experience and keep your
+                    project focused.
+                </p>
+
+                <a href="#" class="text-link">
+                    Read Article →
+                </a>
+
+            </div>
+
+
+            <div class="article">
+
+                <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                    alt=""
+                >
+
+                <div>
+
+                    <span class="tag">WEB DESIGN</span>
+
+                    <h3>
+                        5 signs your website needs a redesign
+                    </h3>
+
+                    <p>
+                        Simple clues that your current website
+                        may be losing visitors.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="article">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                    alt=""
+                >
+
+                <div>
+
+                    <span class="tag">DEVELOPMENT</span>
+
+                    <h3>
+                        Choosing the right technology
+                        for your business
+                    </h3>
+
+                    <p>
+                        A simple way to compare technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="article">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+                    alt=""
+                >
+
+                <div>
+
+                    <span class="tag">BUSINESS</span>
+
+                    <h3>
+                        What makes a digital product easy to use?
+                    </h3>
+
+                    <p>
+                        Important principles for better
+                        customer experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <aside class="sidebar">
+
+            <div class="card">
+
+                <h3>Search</h3>
+
+                <input
+                    type="text"
+                    id="blogSearch"
+                    class="search"
+                    placeholder="Search articles..."
+                >
+
+
+                <h3 class="sidebar-title">
+                    Categories
+                </h3>
+
+                <p>Web Design</p>
+                <p>Development</p>
+                <p>Business</p>
+                <p>Technology</p>
+
+
+                <h3 class="sidebar-title">
+                    Tags
+                </h3>
+
+                <p>
+                    #webdesign #software
+                    #business #startup #ux
+                </p>
+
+
+                <h3 class="sidebar-title">
+                    Newsletter
+                </h3>
+
+                <p>
+                    Get useful digital tips.
+                </p>
+
+                <form
+                    data-message="Thank you for subscribing!">
+
+                    <input
+                        type="email"
+                        class="search"
+                        placeholder="Your email"
+                        required
+                    >
+
+                    <button
+                        class="btn btn-primary full-btn">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

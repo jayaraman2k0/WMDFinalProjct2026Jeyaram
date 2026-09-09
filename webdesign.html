@@ -1,50 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Web Design | TechNova</title>
+
+    <link rel="stylesheet" href="shared.css">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="home.html" class="logo">
+            Tech<span>Nova</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<main class="page">
 
-    <h1>Web Design</h1>
+<section class="page-hero">
 
-    <div class="placeholder">WEB DESIGN IMAGE</div>
+    <div class="container">
 
-    <h2>Our Web Design Service</h2>
+        <span class="tag">WEB DESIGN</span>
 
-    <p>
-        We create responsive and user-friendly websites for businesses
-        and organizations.
-    </p>
+        <h1>Beautiful websites built around your users.</h1>
 
-    <ul>
-        <li>Responsive Design</li>
-        <li>User Interface Design</li>
-        <li>Website Layout</li>
-        <li>Mobile-Friendly Design</li>
-    </ul>
+        <p>
+            Responsive, modern and conversion-focused websites.
+        </p>
 
-</main>
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container two-column">
+
+        <img
+            class="rounded-image"
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80"
+            alt="Web design"
+        >
+
+        <div>
+
+            <span class="tag">OVERVIEW</span>
+
+            <h2>
+                Make your first impression count.
+            </h2>
+
+            <p>
+                We design websites that communicate your
+                brand clearly and help visitors take action.
+            </p>
+
+            <a href="contact.html"
+               class="btn btn-primary">
+                Start a Project →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section alt">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2>What we deliver</h2>
+        </div>
+
+
+        <div class="grid-3">
+
+            <div class="card">
+                <div class="icon">✦</div>
+                <h3>UI/UX Design</h3>
+                <p>
+                    Clear layouts and intuitive user journeys.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">▣</div>
+                <h3>Responsive Design</h3>
+                <p>
+                    Websites that work across all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">✓</div>
+                <h3>Launch Support</h3>
+                <p>
+                    Testing and support before launch.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <h2>Our design process</h2>
+
+        </div>
+
+
+        <div class="grid-2">
+
+            <div class="card">
+                <span class="tag">01</span>
+                <h3>Discover</h3>
+                <p>
+                    Understand goals, users and requirements.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="tag">02</span>
+                <h3>Structure</h3>
+                <p>
+                    Create sitemap and wireframes.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="tag">03</span>
+                <h3>Design</h3>
+                <p>
+                    Create the visual interface.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="tag">04</span>
+                <h3>Launch</h3>
+                <p>
+                    Test, refine and publish.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

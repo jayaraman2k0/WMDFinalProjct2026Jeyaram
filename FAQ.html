@@ -1,49 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ | TechNova</title>
+
+    <link rel="stylesheet" href="shared.css">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">MY WEBSITE</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="home.html" class="logo">
+            Tech<span>Nova</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<main class="page">
 
-    <h1>Frequently Asked Questions</h1>
+<section class="page-hero">
 
-    <div class="faq">
-        <h2>What services do you provide?</h2>
-        <p>We provide web design, development and consulting services.</p>
+    <div class="container">
+
+        <span class="tag">HELP CENTER</span>
+
+        <h1>Frequently Asked Questions</h1>
+
+        <p>
+            Find answers about our services and process.
+        </p>
+
     </div>
 
-    <div class="faq">
-        <h2>Do you create responsive websites?</h2>
-        <p>Yes. Our websites are designed to work on computers, tablets and phones.</p>
+</section>
+
+
+<section class="section">
+
+    <div class="container faq-container">
+
+
+        <input
+            type="text"
+            id="faqSearch"
+            class="search"
+            placeholder="Search questions..."
+        >
+
+
+        <div class="filters">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="service">
+                Services
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="process">
+                Process
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="support">
+                Support
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+
+            <div class="faq-item"
+                 data-category="service">
+
+                <button class="faq-question">
+
+                    What services do you offer?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    We offer web design, software development
+                    and technology consulting.
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item"
+                 data-category="process">
+
+                <button class="faq-question">
+
+                    How does a project start?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Projects usually begin with a discovery
+                    conversation to understand your goals.
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item"
+                 data-category="process">
+
+                <button class="faq-question">
+
+                    Can you improve an existing website?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Yes. We can redesign, improve or extend
+                    an existing website.
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item"
+                 data-category="support">
+
+                <button class="faq-question">
+
+                    Do you provide support after launch?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Yes. Maintenance and ongoing support
+                    packages are available.
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item"
+                 data-category="service">
+
+                <button class="faq-question">
+
+                    Do you build custom software?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Yes. We can create software around
+                    your specific business requirements.
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item"
+                 data-category="support">
+
+                <button class="faq-question">
+
+                    How can I contact TechNova?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Visit our Contact page and send us
+                    your project details.
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="faq">
-        <h2>How can I contact you?</h2>
-        <p>You can contact us using our contact form.</p>
-    </div>
+</section>
 
-</main>
 
 <footer>
-    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    <div class="container footer-bottom">
+        © 2026 TechNova. All rights reserved.
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
