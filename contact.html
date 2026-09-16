@@ -1,342 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | TechNova</title>
-
-    <link rel="stylesheet" href="shared.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Software | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar">
+    <div class="container nav">
+        <a class="logo" href="home.html">JK<span>Software</span></a>
+        <button class="menu">☰</button>
 
-<header class="navbar">
-
-    <div class="container nav-inner">
-
-        <a href="home.html" class="logo">
-            Tech<span>Nova</span>
-        </a>
-
-        <button class="menu-btn">☰</button>
-
-        <nav class="nav-links">
-
+        <div class="navlinks">
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="blog.html">Blog</a>
-            <a href="contact.html" class="active">Contact</a>
-
-        </nav>
-
+            <a href="faq.html">FAQ</a>
+            <a class="btn active" href="contact.html">Contact</a>
+        </div>
     </div>
-
-</header>
-
+</nav>
 
 <section class="page-hero">
-
     <div class="container">
-
-        <span class="tag">GET IN TOUCH</span>
-
-        <h1>Let's build something great.</h1>
-
+        <h1>Start your next project</h1>
         <p>
-            Tell us about your project and we'll help
-            you plan the next step.
+            Tell us about your idea and let's create something useful together.
         </p>
-
     </div>
-
 </section>
-
 
 <section class="section">
 
-    <div class="container contact-grid">
+<div class="container contact-grid">
 
+    <div class="contact-info">
 
-        <div class="card">
+        <h2>Let's talk</h2>
 
-            <span class="tag">PROJECT ENQUIRY</span>
+        <p>
+            Whether you need a website, custom software or
+            technology advice, we'd love to hear from you.
+        </p>
 
-            <h2>Tell us about your project</h2>
-
-            <p>
-                Complete the form and our team will
-                get back to you.
-            </p>
-
-
-            <form
-                class="form-grid"
-                data-message="Thank you! Your enquiry has been submitted."
-            >
-
-                <div class="field">
-
-                    <label>Full Name</label>
-
-                    <input
-                        type="text"
-                        placeholder="Your name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Email</label>
-
-                    <input
-                        type="email"
-                        placeholder="you@example.com"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Service</label>
-
-                    <select required>
-
-                        <option value="">
-                            Choose a service
-                        </option>
-
-                        <option>
-                            Web Design
-                        </option>
-
-                        <option>
-                            Development
-                        </option>
-
-                        <option>
-                            Consulting
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label>Budget</label>
-
-                    <select>
-
-                        <option>
-                            Not sure yet
-                        </option>
-
-                        <option>
-                            Under $1,000
-                        </option>
-
-                        <option>
-                            $1,000 - $5,000
-                        </option>
-
-                        <option>
-                            $5,000+
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field full">
-
-                    <label>Project Details</label>
-
-                    <textarea
-                        placeholder="Tell us about your project..."
-                        required>
-                    </textarea>
-
-                </div>
-
-
-                <div class="field full">
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary">
-                        Send Enquiry →
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-
-        <div class="contact-info">
-
-            <div class="card">
-
-                <div class="icon">✉</div>
-
-                <h3>Email</h3>
-
-                <p>
-                    hello@technova.com
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icon">☎</div>
-
-                <h3>Phone</h3>
-
-                <p>
-                    +65 6000 1234
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icon">⌖</div>
-
-                <h3>Office</h3>
-
-                <p>
-                    Singapore
-                </p>
-
-            </div>
-
-
-            <div class="map">
-
-                <div>
-                    <strong>TechNova</strong>
-                    <br>
-                    Singapore Office
-                </div>
-
-            </div>
-
-        </div>
+        <p>📧 hello@jksoftware.com</p>
+        <p>📞 +65 6000 0000</p>
+        <p>📍 Singapore</p>
 
     </div>
 
+
+    <div class="form">
+
+        <div class="notice" id="formNotice"></div>
+
+        <form id="contactForm">
+
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" required placeholder="Enter your name">
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="field">
+                <label>Service</label>
+
+                <select required>
+                    <option value="">Select a service</option>
+                    <option>Web Design</option>
+                    <option>Development</option>
+                    <option>Consulting</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Message</label>
+                <textarea required placeholder="Tell us about your project"></textarea>
+            </div>
+
+            <button class="btn" type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
 </section>
 
-
-<section class="section alt">
-
+<footer class="footer">
     <div class="container">
-
-        <div class="section-head">
-
-            <span class="tag">FAQ</span>
-
-            <h2>Quick answers</h2>
-
+        <div class="copy">
+            © 2026 JK Software Services. All rights reserved.
         </div>
-
-
-        <div class="card">
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    How long does a website take?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    A typical website can take several weeks,
-                    depending on content and functionality.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Do you work with individuals?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. We work with individuals, startups
-                    and established companies.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Do you provide support after launch?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. We offer ongoing maintenance
-                    and support packages.
-
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
-
-</section>
-
-
-<footer>
-
-    <div class="container footer-bottom">
-        © 2026 TechNova. All rights reserved.
-    </div>
-
 </footer>
-
 
 <script src="script.js"></script>
 

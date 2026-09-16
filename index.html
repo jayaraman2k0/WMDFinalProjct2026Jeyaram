@@ -1,97 +1,1045 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova | Sitemap</title>
-    <link rel="stylesheet" href="shared.css">
+
+    <title>JK Software | Website Sitemap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ================================
+           SITEMAP PAGE DESIGN
+        ================================= */
+
+        .sitemap-hero {
+            position: relative;
+            overflow: hidden;
+            padding: 95px 0 80px;
+            background:
+                radial-gradient(circle at 10% 20%, #e7ddff, transparent 30%),
+                radial-gradient(circle at 90% 10%, #ddd1ff, transparent 28%),
+                linear-gradient(135deg, #ffffff, #f5f1ff);
+        }
+
+        .sitemap-hero::before {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: rgba(108, 60, 255, 0.08);
+            right: -100px;
+            bottom: -100px;
+        }
+
+        .sitemap-hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sitemap-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 30px;
+            background: #eee8ff;
+            color: #6c3cff;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .sitemap-hero h1 {
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .sitemap-hero h1 span {
+            color: #6c3cff;
+        }
+
+        .sitemap-hero p {
+            color: #626274;
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+
+        /* ================================
+           WEBSITE STRUCTURE
+        ================================= */
+
+        .structure {
+            padding: 90px 0;
+            background: #ffffff;
+        }
+
+        .structure-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .structure-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .structure-title p {
+            color: #6b6a78;
+        }
+
+
+        /* Main Home Node */
+
+        .main-node {
+            max-width: 310px;
+            margin: auto;
+            position: relative;
+        }
+
+        .home-node {
+            background: linear-gradient(135deg, #6c3cff, #8d63ff);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 45px rgba(108,60,255,0.25);
+            position: relative;
+            z-index: 3;
+        }
+
+        .home-node .node-icon {
+            width: 55px;
+            height: 55px;
+            margin: auto auto 12px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.18);
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+        }
+
+        .home-node h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .home-node p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+
+        /* Connector */
+
+        .connector {
+            width: 2px;
+            height: 45px;
+            background: #d5cdf3;
+            margin: auto;
+        }
+
+        .connector-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #6c3cff;
+            margin: -5px auto 0;
+            position: relative;
+            z-index: 4;
+        }
+
+
+        /* ================================
+           PAGE GROUPS
+        ================================= */
+
+        .page-groups {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .group {
+            background: #ffffff;
+            border: 1px solid #e8e4f4;
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: 0 10px 35px rgba(40,20,90,0.06);
+            transition: 0.3s ease;
+        }
+
+        .group:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 50px rgba(40,20,90,0.12);
+        }
+
+        .group-top {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .group-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: #eee8ff;
+            color: #6c3cff;
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+        }
+
+        .group h3 {
+            font-size: 19px;
+        }
+
+        .group small {
+            color: #8a8897;
+        }
+
+
+        /* Page Links */
+
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 14px;
+            margin-top: 9px;
+            border-radius: 11px;
+            background: #faf9ff;
+            border: 1px solid #eeeaf8;
+            transition: 0.25s;
+        }
+
+        .page-link:hover {
+            background: #eee8ff;
+            color: #6c3cff;
+            transform: translateX(4px);
+        }
+
+        .page-link-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .page-number {
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            background: white;
+            color: #6c3cff;
+            display: grid;
+            place-items: center;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .arrow {
+            font-size: 18px;
+            color: #9995a9;
+        }
+
+
+        /* ================================
+           FULL SITE GRID
+        ================================= */
+
+        .all-pages {
+            padding: 90px 0;
+            background: #f7f5ff;
+        }
+
+        .all-pages-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .all-pages-header h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .all-pages-header p {
+            color: #6b6a78;
+        }
+
+        .page-count {
+            display: inline-block;
+            margin-top: 15px;
+            background: white;
+            color: #6c3cff;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            border: 1px solid #e7e1fa;
+        }
+
+        .all-page-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .all-page-card {
+            background: white;
+            border: 1px solid #e8e4f4;
+            border-radius: 18px;
+            padding: 23px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .all-page-card::after {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: #eee8ff;
+            border-radius: 50%;
+            right: -30px;
+            top: -30px;
+        }
+
+        .all-page-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(40,20,90,0.10);
+            border-color: #d8ceff;
+        }
+
+        .all-page-card-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: #f0ecff;
+            color: #6c3cff;
+            display: grid;
+            place-items: center;
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        .all-page-card h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .all-page-card p {
+            color: #737181;
+            font-size: 13px;
+        }
+
+
+        /* ================================
+           CTA
+        ================================= */
+
+        .sitemap-cta {
+            padding: 90px 0;
+            background: white;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #20143f, #6c3cff);
+            color: white;
+            border-radius: 28px;
+            padding: 55px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            left: -70px;
+            top: -100px;
+        }
+
+        .cta-box h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .cta-box p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            color: #ded8f2;
+            position: relative;
+        }
+
+        .cta-box .btn {
+            background: white;
+            color: #6c3cff !important;
+            position: relative;
+        }
+
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media(max-width:900px) {
+
+            .page-groups {
+                grid-template-columns: 1fr;
+            }
+
+            .all-page-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width:600px) {
+
+            .sitemap-hero {
+                padding: 70px 0;
+            }
+
+            .sitemap-hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .structure,
+            .all-pages,
+            .sitemap-cta {
+                padding: 65px 0;
+            }
+
+            .all-page-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 40px 25px;
+            }
+
+            .cta-box h2 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-<header class="navbar">
-    <div class="container nav-inner">
-        <a href="home.html" class="logo">Tech<span>Nova</span></a>
+<!-- ================================
+     NAVIGATION
+================================= -->
 
-        <a href="home.html" class="btn btn-primary">
-            Open Website →
+<nav class="navbar">
+
+    <div class="container nav">
+
+        <a class="logo" href="home.html">
+            JK<span>Software</span>
         </a>
-    </div>
-</header>
 
-<section class="page-hero">
-    <div class="container">
-        <span class="tag">SITE ARCHITECTURE</span>
-        <h1>TechNova Sitemap</h1>
-        <p>
-            Explore the complete structure of our software services website.
-        </p>
-    </div>
-</section>
+        <button class="menu">☰</button>
 
-<section class="section">
-    <div class="container">
+        <div class="navlinks">
 
-        <div class="section-head">
-            <h2>Website Pages</h2>
-            <p>Click any page to visit it.</p>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+
+            <a class="btn" href="contact.html">
+                Contact
+            </a>
+
         </div>
 
-        <div class="sitemap">
+    </div>
 
-            <div class="card">
-                <div class="icon">⌂</div>
-                <h3>Main Pages</h3>
+</nav>
 
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+
+<!-- ================================
+     HERO
+================================= -->
+
+<section class="sitemap-hero">
+
+    <div class="container sitemap-hero-content">
+
+        <div class="sitemap-badge">
+            ✦ WEBSITE STRUCTURE
+        </div>
+
+        <h1>
+            Explore the <span>JK Software</span> Website
+        </h1>
+
+        <p>
+            A clear visual sitemap showing how every page connects
+            together to create a simple and professional digital experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     WEBSITE STRUCTURE
+================================= -->
+
+<section class="structure">
+
+    <div class="container">
+
+        <div class="structure-title">
+
+            <div class="eyebrow">
+                WEBSITE ARCHITECTURE
             </div>
 
-            <div class="card">
-                <div class="icon">◎</div>
+            <h2>How the website is organised</h2>
+
+            <p>
+                The website is divided into clear sections for
+                company information, services and customer support.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN HOME -->
+
+        <div class="main-node">
+
+            <a href="home.html" class="home-node">
+
+                <div class="node-icon">
+                    ⌂
+                </div>
+
+                <h3>Home</h3>
+
+                <p>
+                    Main website entry point
+                </p>
+
+            </a>
+
+        </div>
+
+
+        <div class="connector"></div>
+        <div class="connector-dot"></div>
+
+
+        <!-- GROUPS -->
+
+        <div class="page-groups">
+
+
+            <!-- COMPANY -->
+
+            <div class="group">
+
+                <div class="group-top">
+
+                    <div class="group-icon">
+                        ◎
+                    </div>
+
+                    <div>
+                        <h3>Company</h3>
+                        <small>About the business</small>
+                    </div>
+
+                </div>
+
+                <a class="page-link" href="about.html">
+                    <span class="page-link-left">
+                        <span class="page-number">01</span>
+                        About
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="team.html">
+                    <span class="page-link-left">
+                        <span class="page-number">02</span>
+                        Team
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="story.html">
+                    <span class="page-link-left">
+                        <span class="page-number">03</span>
+                        Our Story
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="group">
+
+                <div class="group-top">
+
+                    <div class="group-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h3>Services</h3>
+                        <small>Digital solutions</small>
+                    </div>
+
+                </div>
+
+                <a class="page-link" href="services.html">
+                    <span class="page-link-left">
+                        <span class="page-number">04</span>
+                        Services
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="web-design.html">
+                    <span class="page-link-left">
+                        <span class="page-number">05</span>
+                        Web Design
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="development.html">
+                    <span class="page-link-left">
+                        <span class="page-number">06</span>
+                        Development
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="consulting.html">
+                    <span class="page-link-left">
+                        <span class="page-number">07</span>
+                        Consulting
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECTS -->
+
+            <div class="group">
+
+                <div class="group-top">
+
+                    <div class="group-icon">
+                        ▣
+                    </div>
+
+                    <div>
+                        <h3>Projects</h3>
+                        <small>Our previous work</small>
+                    </div>
+
+                </div>
+
+                <a class="page-link" href="portfolio.html">
+                    <span class="page-link-left">
+                        <span class="page-number">08</span>
+                        Portfolio
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="case-studies.html">
+                    <span class="page-link-left">
+                        <span class="page-number">09</span>
+                        Case Studies
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="blog.html">
+                    <span class="page-link-left">
+                        <span class="page-number">10</span>
+                        Blog
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+
+
+            <!-- SUPPORT -->
+
+            <div class="group">
+
+                <div class="group-top">
+
+                    <div class="group-icon">
+                        ?
+                    </div>
+
+                    <div>
+                        <h3>Support</h3>
+                        <small>Help & information</small>
+                    </div>
+
+                </div>
+
+                <a class="page-link" href="faq.html">
+                    <span class="page-link-left">
+                        <span class="page-number">11</span>
+                        FAQ
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a class="page-link" href="contact.html">
+                    <span class="page-link-left">
+                        <span class="page-number">12</span>
+                        Contact
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     ALL PAGES
+================================= -->
+
+<section class="all-pages">
+
+    <div class="container">
+
+        <div class="all-pages-header">
+
+            <div class="eyebrow">
+                COMPLETE SITEMAP
+            </div>
+
+            <h2>Every page at a glance</h2>
+
+            <p>
+                Quickly access any section of the website.
+            </p>
+
+            <div class="page-count">
+                13 PAGES
+            </div>
+
+        </div>
+
+
+        <div class="all-page-grid">
+
+
+            <a class="all-page-card" href="home.html">
+
+                <div class="all-page-card-icon">⌂</div>
+
+                <h3>Home</h3>
+
+                <p>
+                    Main introduction and website overview.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="about.html">
+
+                <div class="all-page-card-icon">◎</div>
+
                 <h3>About</h3>
 
-                <a href="team.html">Our Team</a>
-                <a href="story.html">Our Story</a>
+                <p>
+                    Company information and approach.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="services.html">
+
+                <div class="all-page-card-icon">✦</div>
+
+                <h3>Services</h3>
+
+                <p>
+                    Digital services provided by the company.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="portfolio.html">
+
+                <div class="all-page-card-icon">▣</div>
+
+                <h3>Portfolio</h3>
+
+                <p>
+                    Selected projects and previous work.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="blog.html">
+
+                <div class="all-page-card-icon">✎</div>
+
+                <h3>Blog</h3>
+
+                <p>
+                    Technology ideas and digital insights.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="contact.html">
+
+                <div class="all-page-card-icon">✉</div>
+
+                <h3>Contact</h3>
+
+                <p>
+                    Start a project and contact our team.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="faq.html">
+
+                <div class="all-page-card-icon">?</div>
+
+                <h3>FAQ</h3>
+
+                <p>
+                    Answers to common questions.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="team.html">
+
+                <div class="all-page-card-icon">♙</div>
+
+                <h3>Team</h3>
+
+                <p>
+                    Meet the people behind the work.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="story.html">
+
+                <div class="all-page-card-icon">♡</div>
+
+                <h3>Our Story</h3>
+
+                <p>
+                    Learn about our journey and values.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="web-design.html">
+
+                <div class="all-page-card-icon">◈</div>
+
+                <h3>Web Design</h3>
+
+                <p>
+                    Responsive and modern website design.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="development.html">
+
+                <div class="all-page-card-icon">⌘</div>
+
+                <h3>Development</h3>
+
+                <p>
+                    Custom software and web applications.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="consulting.html">
+
+                <div class="all-page-card-icon">◇</div>
+
+                <h3>Consulting</h3>
+
+                <p>
+                    Technology planning and digital strategy.
+                </p>
+
+            </a>
+
+
+            <a class="all-page-card" href="case-studies.html">
+
+                <div class="all-page-card-icon">▤</div>
+
+                <h3>Case Studies</h3>
+
+                <p>
+                    Real-world problems and digital solutions.
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     CTA
+================================= -->
+
+<section class="sitemap-cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>Ready to explore our services?</h2>
+
+            <p>
+                Discover how JK Software Services can help you
+                build a better digital experience.
+            </p>
+
+            <a class="btn" href="services.html">
+                Explore Services →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>JK Software</h3>
+
+                <p>
+                    Modern software services for individuals
+                    and businesses.
+                </p>
             </div>
 
-            <div class="card">
-                <div class="icon">⚙</div>
-                <h3>Services</h3>
+
+            <div>
+
+                <h4>Company</h4>
+
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="story.html">Our Story</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Services</h4>
 
                 <a href="web-design.html">Web Design</a>
                 <a href="development.html">Development</a>
                 <a href="consulting.html">Consulting</a>
+
             </div>
 
-            <div class="card">
-                <div class="icon">▣</div>
-                <h3>Portfolio</h3>
 
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="portfolio.html">Portfolio</a>
                 <a href="case-studies.html">Case Studies</a>
-            </div>
+                <a href="contact.html">Contact</a>
 
-            <div class="card">
-                <div class="icon">?</div>
-                <h3>Support</h3>
-
-                <a href="faq.html">FAQ</a>
             </div>
 
         </div>
 
-    </div>
-</section>
 
-<footer>
-    <div class="container footer-bottom">
-        © 2026 TechNova. All rights reserved.
+        <div class="copy">
+            © 2026 JK Software Services. All rights reserved.
+        </div>
+
     </div>
+
 </footer>
+
 
 <script src="script.js"></script>
 

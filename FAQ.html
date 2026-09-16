@@ -1,249 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>FAQ | TechNova</title>
-
-    <link rel="stylesheet" href="shared.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Software | FAQ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar">
+    <div class="container nav">
+        <a class="logo" href="home.html">JK<span>Software</span></a>
+        <button class="menu">☰</button>
 
-<header class="navbar">
-
-    <div class="container nav-inner">
-
-        <a href="home.html" class="logo">
-            Tech<span>Nova</span>
-        </a>
-
-        <nav class="nav-links">
-
+        <div class="navlinks">
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
+            <a class="active" href="faq.html">FAQ</a>
+            <a class="btn" href="contact.html">Contact</a>
+        </div>
     </div>
-
-</header>
-
+</nav>
 
 <section class="page-hero">
-
     <div class="container">
-
-        <span class="tag">HELP CENTER</span>
-
-        <h1>Frequently Asked Questions</h1>
-
+        <h1>Frequently asked questions</h1>
         <p>
-            Find answers about our services and process.
+            Find answers to common questions about our services.
         </p>
-
     </div>
-
 </section>
-
 
 <section class="section">
 
-    <div class="container faq-container">
+<div class="container">
 
+<div class="faq">
 
-        <input
-            type="text"
-            id="faqSearch"
-            class="search"
-            placeholder="Search questions..."
-        >
-
-
-        <div class="filters">
-
-            <button
-                class="filter-btn active"
-                data-filter="all">
-                All
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="service">
-                Services
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="process">
-                Process
-            </button>
-
-            <button
-                class="filter-btn"
-                data-filter="support">
-                Support
-            </button>
-
+    <div class="faq-item">
+        <button class="faq-q">
+            What services do you offer?
+            <span>+</span>
+        </button>
+        <div class="faq-a">
+            We offer web design, software development and
+            technology consulting services.
         </div>
-
-
-        <div class="card">
-
-
-            <div class="faq-item"
-                 data-category="service">
-
-                <button class="faq-question">
-
-                    What services do you offer?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    We offer web design, software development
-                    and technology consulting.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item"
-                 data-category="process">
-
-                <button class="faq-question">
-
-                    How does a project start?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Projects usually begin with a discovery
-                    conversation to understand your goals.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item"
-                 data-category="process">
-
-                <button class="faq-question">
-
-                    Can you improve an existing website?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. We can redesign, improve or extend
-                    an existing website.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item"
-                 data-category="support">
-
-                <button class="faq-question">
-
-                    Do you provide support after launch?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. Maintenance and ongoing support
-                    packages are available.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item"
-                 data-category="service">
-
-                <button class="faq-question">
-
-                    Do you build custom software?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. We can create software around
-                    your specific business requirements.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item"
-                 data-category="support">
-
-                <button class="faq-question">
-
-                    How can I contact TechNova?
-
-                    <span>+</span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Visit our Contact page and send us
-                    your project details.
-
-                </div>
-
-            </div>
-
-
-        </div>
-
     </div>
 
+    <div class="faq-item">
+        <button class="faq-q">
+            Do you work with individuals?
+            <span>+</span>
+        </button>
+        <div class="faq-a">
+            Yes. We work with individuals, startups, small
+            businesses and larger companies.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-q">
+            Can you maintain an existing website?
+            <span>+</span>
+        </button>
+        <div class="faq-a">
+            Yes. We can help improve, update and maintain
+            existing websites.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-q">
+            How do I start a project?
+            <span>+</span>
+        </button>
+        <div class="faq-a">
+            Simply visit our contact page and send us your
+            project requirements.
+        </div>
+    </div>
+
+</div>
+
+</div>
 </section>
 
-
-<footer>
-
-    <div class="container footer-bottom">
-        © 2026 TechNova. All rights reserved.
+<footer class="footer">
+    <div class="container">
+        <div class="copy">
+            © 2026 JK Software Services. All rights reserved.
+        </div>
     </div>
-
 </footer>
-
 
 <script src="script.js"></script>
 

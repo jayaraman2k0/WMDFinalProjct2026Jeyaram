@@ -1,264 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio | TechNova</title>
-
-    <link rel="stylesheet" href="shared.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Software | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar">
+    <div class="container nav">
+        <a class="logo" href="home.html">JK<span>Software</span></a>
+        <button class="menu">☰</button>
 
-<header class="navbar">
-
-    <div class="container nav-inner">
-
-        <a href="home.html" class="logo">
-            Tech<span>Nova</span>
-        </a>
-
-        <button class="menu-btn">☰</button>
-
-        <nav class="nav-links">
-
+        <div class="navlinks">
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
+            <a class="active" href="portfolio.html">Portfolio</a>
             <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
+            <a href="faq.html">FAQ</a>
+            <a class="btn" href="contact.html">Contact</a>
+        </div>
     </div>
-
-</header>
-
+</nav>
 
 <section class="page-hero">
-
     <div class="container">
-
-        <span class="tag">OUR PORTFOLIO</span>
-
-        <h1>Projects we're proud of.</h1>
-
+        <h1>Selected projects</h1>
         <p>
-            Explore websites, applications and digital experiences
-            created by TechNova.
+            A selection of digital concepts and solutions created for different needs.
         </p>
-
     </div>
-
 </section>
-
 
 <section class="section">
 
-    <div class="container">
+<div class="container">
 
+<div class="cards">
 
-        <div class="filters">
+    <div class="card project">
+        <div class="project-img">⌂</div>
 
-            <button
-                class="filter-btn portfolio-filter active"
-                data-filter="all">
-                All
-            </button>
+        <div class="project-body">
+            <h3>Business Website</h3>
+            <p>
+                Responsive corporate website with service pages
+                and lead-generation forms.
+            </p>
 
-            <button
-                class="filter-btn portfolio-filter"
-                data-filter="web">
-                Web
-            </button>
-
-            <button
-                class="filter-btn portfolio-filter"
-                data-filter="mobile">
-                Mobile
-            </button>
-
-            <button
-                class="filter-btn portfolio-filter"
-                data-filter="ecommerce">
-                E-commerce
-            </button>
-
+            <div class="tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
         </div>
-
-
-        <div class="grid-3">
-
-
-            <div class="card project"
-                 data-category="ecommerce">
-
-                <img
-                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
-                    alt="NovaShop">
-
-                <span class="tag">E-COMMERCE</span>
-
-                <h3>NovaShop</h3>
-
-                <p>
-                    Modern online shopping experience.
-                </p>
-
-            </div>
-
-
-            <div class="card project"
-                 data-category="web">
-
-                <img
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
-                    alt="InsightPro">
-
-                <span class="tag">WEB APP</span>
-
-                <h3>InsightPro</h3>
-
-                <p>
-                    Business analytics dashboard.
-                </p>
-
-            </div>
-
-
-            <div class="card project"
-                 data-category="mobile">
-
-                <img
-                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
-                    alt="FitTrack">
-
-                <span class="tag">MOBILE</span>
-
-                <h3>FitTrack</h3>
-
-                <p>
-                    Mobile productivity application.
-                </p>
-
-            </div>
-
-
-            <div class="card project"
-                 data-category="web">
-
-                <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
-                    alt="StudioSite">
-
-                <span class="tag">WEB</span>
-
-                <h3>StudioSite</h3>
-
-                <p>
-                    Creative agency website.
-                </p>
-
-            </div>
-
-
-            <div class="card project"
-                 data-category="mobile">
-
-                <img
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
-                    alt="TaskFlow">
-
-                <span class="tag">MOBILE</span>
-
-                <h3>TaskFlow</h3>
-
-                <p>
-                    Productivity application.
-                </p>
-
-            </div>
-
-
-            <div class="card project"
-                 data-category="ecommerce">
-
-                <img
-                    src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
-                    alt="StyleCart">
-
-                <span class="tag">E-COMMERCE</span>
-
-                <h3>StyleCart</h3>
-
-                <p>
-                    Fashion shopping platform.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="center pagination">
-
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-
-        </div>
-
     </div>
 
+
+    <div class="card project">
+        <div class="project-img">▣</div>
+
+        <div class="project-body">
+            <h3>Online Platform</h3>
+            <p>
+                Custom web platform designed to simplify
+                customer workflows.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Web App</span>
+                <span class="tag">Database</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card project">
+        <div class="project-img">◈</div>
+
+        <div class="project-body">
+            <h3>Digital Dashboard</h3>
+            <p>
+                Clean dashboard interface designed for
+                simple information management.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Dashboard</span>
+                <span class="tag">UX</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
 </section>
 
-
-<section class="cta">
-
+<footer class="footer">
     <div class="container">
-
-        <div class="cta-box">
-
-            <div>
-
-                <h2>
-                    Want to see our process?
-                </h2>
-
-                <p>
-                    Explore our detailed case studies.
-                </p>
-
-            </div>
-
-            <a href="case-studies.html"
-               class="btn white-btn">
-                View Case Studies →
-            </a>
-
+        <div class="copy">
+            © 2026 JK Software Services. All rights reserved.
         </div>
-
     </div>
-
-</section>
-
-
-<footer>
-
-    <div class="container footer-bottom">
-        © 2026 TechNova. All rights reserved.
-    </div>
-
 </footer>
-
 
 <script src="script.js"></script>
 
